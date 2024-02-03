@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .discover-container,
+    .myl-container,
+    .ynfl-container {
+        /* padding: 10px; */
+        /* margin-right:40px; */
+        margin-left:60px;
+    }
+
+    .discover-cards,
+    .myl-cards,
+    .ynfl-cards {
+        display: flex;
+
+    }
+
+    .discover-card,
+    .myl-card,
+    .ynfl-card {
+        display: flex;
+        flex-direction: column;
+        margin-right:5px;
+        align-content: space-between;
+        width: 200px;
+
+    }
+
+    .discover-a,
+    .myl-a,
+    .ynfl-a {
+        margin-top: 2px;
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+
+    .discover-img,
+    .myl-img,
+    .ynfl-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 190px;
+        height:190px;
+    }
+
+    .discover-a:hover,
+    .myl-a:hover,
+    .ynfl-a:hover,.more-episodes:hover{
+        color: orangered;
+        text-decoration: underline;
+    }
+
+
+    .ynfl-card:hover .play-blanck{
+        opacity:0.5;
+        color: orangered;
+        text-decoration: underline;
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        background-color: black;    
+    }
+
+
+
+
+.ynfl-name{
+    font-size:16px;
+    word-spacing: 1px;
+    font-weight: 100;
+}
+.more-episodes{
+    margin-top:60px;
+    text-align-last:left;
+    text-decoration: none;
+    color: black;
+    font-size:14px;
+    font-weight: 700;
+}
+    
+</style>
+
+<body>
+
+    <!-- Discover Prodcasts -->
+    <div class="discover-container">
+        <h1 style="height: 38px; font-weight: 700; margin-top: 10px; margin-bottom: 10px;">Discover Prodcasts</h1>
+
+        <div class="discover-cards">
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0g9lrt1.jpg.webp" alt="img-1"
+                        class="discover-img">
+                    <p>Newscast</p>
+                </a>
+                <p>Why was the Clapham attack suspect's asylum claim approved?</p>
+            </div>
+
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0h8nsgp.jpg.webp" alt="img-2"
+                        class="discover-img">
+                    <p>File on 4</p>
+                </a>
+                <p>File on 4 tells the story behind the killing of schoolgirl Brianna Ghey.</p>
+            </div>
+
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0h7dgnv.jpg.webp" alt="img-3"
+                        class="discover-img">
+                    <p>Rugby Union Daily</p>
+                </a>
+                <p>Chris Jones, Ugo Monye and Chris Ashton deliver daily reaction from the 2024 Six Nations.</p>
+            </div>
+
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0h23g99.jpg.webp" alt="img-4"
+                        class="discover-img">
+                    <p>Thing Fell Apart</p>
+                </a>
+                <p>Strange tales from the culture wars with Jon Ronson</p>
+            </div>
+
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0gv62dd.jpg.webp" alt="img-5"
+                        class="discover-img">
+                    <p>Sidetracked with Annie and Nick</p>
+                </a>
+                <p>Join Annie Macmanus and Nick Grimshaw as they explore the week in music.</p>
+            </div>
+
+            <div class="discover-card">
+                <a href="#" class="discover-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0g7t19v.jpg.webp" alt="img-6"
+                        class="discover-img">
+                    <p>Football Daily</p>
+                </a>
+                <p>The latest news & analysis from the Premier League, EFL, WSL & more.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Music You'll Love -->
+
+    <div class="myl-container">
+        <h1 style="height: 38px; font-weight: 700; margin-top: 10px; margin-bottom: 10px;">Music You'll Love</h1>
+
+        <div class="myl-cards">
+
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0h8r0zz.jpg.webp" alt="img-1" class="myl-img">
+                    <p>Radio 2's Piano Room</p>
+                </a>
+                <p>Gabrielle, The Libertines, Beverley Knight and more peform live for Piano Room Month.</p>
+            </div>
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0g9y0vx.jpg.webp" alt="img-2" class="myl-img">
+                    <p>Radio 1 Anthems</p>
+                </a>
+                <p>Big anthems and tunes you haven't heard in ages.</p>
+            </div>
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0h8p2vg.jpg.webp" alt="img-3" class="myl-img">
+                    <p>Artist Icons Collection</p>
+                </a>
+                <p>Celebrating the music of Usher with classic performances, interviews and more</p>
+            </div>
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0g1l1t7.jpg.webp" alt="img-4" class="myl-img">
+                    <p>The Sleeping Forecast</p>
+                </a>
+                <p>A unique journey to dreamland, mixing instrumental music and Radio 4's Shipping Forecast.</p>
+            </div>
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0g858fd.jpg.webp" alt="img-5" class="myl-img">
+                    <p>Pace Setter</p>
+                </a>
+                <p>Hours of massive pop, dance, rock and R&B hits to soundtrack your daily workout.</p>
+            </div>
+            <div class="myl-card">
+                <a href="#" class="myl-a">
+                    <img src="https://ichef.bbci.co.uk/images/ic/224x224/p0fvbjk2.jpg.webp" alt="img-6" class="myl-img">
+                    <p>1Xtra Salutes...</p>
+                </a>
+                <p>A shout-out to some of the biggest names in Hip-Hop, R&B, Reggae, Dancehall and Afrobeats.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your New Favourite Listens -->
+
+
+
+    <div class="ynfl-container">
+        <h1 style="height: 38px; font-weight: 700; margin-top: 10px; margin-bottom: 10px;">Your New Favourite Listens</h1>
+
+        <div class="ynfl-cards">
+
+                <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0ghz5t3.jpg.webp" alt="img-1"
+                        class="ynfl-img ">
+                    <p>Young Again</p>
+                </a>
+                <div class="play-blanck"></div>
+
+                <p class="ynfl-name">2.Daniel Kaluya <br> 28 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+            <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0h42xgt.jpg.webp" alt="img-2"
+                        class="ynfl-img ">
+                    <p>Lady Killes with Lucy Worsely</p>
+                </a>
+                <!-- <div class="play-blanck"><img src="" alt="img"></div> -->
+
+                <p class="ynfl-name">29. Mary Ann Brough - Mother With Everything to Lose <br> 28 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+            <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0h23tp2.jpg.webp" alt="img-3"
+                        class="ynfl-img ">
+                    <p>Thing Fell Apart</p>
+                </a>
+                <!-- <div class="play-blanck"><img src="" alt="img"></div> -->
+
+                <p class="ynfl-name">S1. Ep 1: 1000 Dolls <br> 31 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+            <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0h2l05x.jpg.webp" alt="img-4"
+                        class="ynfl-img ">
+                    <p>Gangster</p>
+                </a>
+                <!-- <div class="play-blanck"><img src="" alt="img"></div> -->
+
+                <p class="ynfl-name">Catching the Kingpins Catching the Kingpins: <br>1. The Hack
+                 <br>28 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+
+            <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0f1rkhf.jpg.webp" alt="img-5"
+                        class="ynfl-img ">
+                    <p>Love Bombed</p>
+                </a>
+                <!-- <div class="play-blanck"><img src="" alt="img"></div> -->
+
+                <p class="ynfl-name">Series 1: Who is James Scott?<br>
+                    1. Firefighting   
+                   <br>13 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+            <div class="ynfl-card">
+                <a href="#" class="ynfl-a ">
+                    <img src="https://ichef.bbci.co.uk/images/ic/320x320/p0h13yp1.jpg.webp" alt="img-6"
+                        class="ynfl-img ">
+                    <p>Just One Thing - With Michael Mosely</p>
+                </a>
+                <!-- <div class="play-blanck"><img src="" alt="img"></div> -->
+
+                <p class="ynfl-name">Inflammation Special – with Prof Janet Lord<br> 38 mins</p>
+                <a href="#" class="more-episodes"> More episodes <img src="" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Categories -->
+    
+      <div class="categories-main">
+          <div><h1>Categories</h1> <p>View all Categories</p></div>
+          <div class="categories-div">
+               <div>
+                <img src="" alt="">
+                <p>Comedy</p>
+               </div>
+          </div>
+
+      </div>
+
+      <!-- 
+        Comedy:https://ichef.bbci.co.uk/images/ic/240x135/p07b7c0b.jpg.webp
+        Drama:https://ichef.bbci.co.uk/images/ic/240x135/p07b7cd0.jpg.webp
+        Doucumentris:https://ichef.bbci.co.uk/images/ic/352x198/p07b7c5x.jpg.webp
+        sport:https://ichef.bbci.co.uk/images/ic/352x198/p07b7dn3.jpg.webp
+        Science & Technology :https://ichef.bbci.co.uk/images/ic/352x198/p07b7drg.jpg.webp
+        True Crime : https://ichef.bbci.co.uk/images/ic/352x198/p080nvvg.jpg.webp
+        Podcast:https://ichef.bbci.co.uk/images/ic/240x135/p07b7d5n.jpg.webp
+        Pop & Chart :https://ichef.bbci.co.uk/images/ic/352x198/p07b7bbp.jpg.webp
+        Dance & Electronica : https://ichef.bbci.co.uk/images/ic/352x198/p07b7b13.jpg.webp
+        Rock & Indie: https://ichef.bbci.co.uk/images/ic/352x198/p07b7bfk.jpg.webp
+        Hip , Hop Rnd :https://ichef.bbci.co.uk/images/ic/352x198/p07b7b68.jpg.webp
+        Classical : https://ichef.bbci.co.uk/images/ic/352x198/p07b79yx.jpg.webp
+       -->
+
+</body>
+
+</html>
